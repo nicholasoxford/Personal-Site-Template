@@ -11,7 +11,8 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_awsamplify_8f02af2e from 'nuxt_plugin_awsamplify_8f02af2e' // Source: ..\\plugins\\aws-amplify.js (mode: 'client')
+import nuxt_plugin_awsamplify_8f02af2e from 'nuxt_plugin_awsamplify_8f02af2e' // Source: ../plugins/aws-amplify.js (mode: 'client')
+import nuxt_plugin_elementui_72a9ed1c from 'nuxt_plugin_elementui_72a9ed1c' // Source: ../plugins/element-ui.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -147,6 +148,10 @@ async function createApp (ssrContext) {
 
   if (process.client && typeof nuxt_plugin_awsamplify_8f02af2e === 'function') {
     await nuxt_plugin_awsamplify_8f02af2e(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_elementui_72a9ed1c === 'function') {
+    await nuxt_plugin_elementui_72a9ed1c(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

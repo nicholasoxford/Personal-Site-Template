@@ -1,13 +1,21 @@
 <template>
   <div>
     <TopNav :signedIn="signedIn" class="top-menu"></TopNav>
-    <nuxt class="top-class" />
+    <div class="container">
+          <el-card class="side-bar">
+        <SideBar class="side-bar-app" />
+      </el-card>
+      <el-card class="box-card">
+        <nuxt class="main-app-nuxt" />
+      </el-card>
+      </div>
   </div>
 </template>
 <script>
 
 import { Auth } from 'aws-amplify'
 import { AmplifyEventBus } from 'aws-amplify-vue'
+import SideBar from '~/components/SideBar.vue'
 import TopNav from '~/components/TopNav.vue'
 export default {
   data() {
@@ -26,7 +34,8 @@ export default {
     }
   },
   components: {
-    TopNav
+    TopNav,
+    SideBar
   },
 
     methods: {
@@ -71,5 +80,26 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+.nuxt-link {
+  text-decoration: none;
+}
+.container {
+  padding-left:5%;
+  padding-right: 5%;
+  margin-top: 5px;
+}
+.side-bar {
+  width: 25%;
+  float: left;
+  margin-left: 5px;
+  margin-right: 10px;
+  text-align: center;
+}
+.box-card {
+  margin: 5px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 0;
 }
 </style>

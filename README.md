@@ -47,4 +47,4 @@ List step takes a few minutes to complete.
 1. Run `npm run dev` in your terminal.
 
 ## Deploy the app to Hosting
-1. Run `amplify publish` to auto-build your SPA and upload it to your S3 bucket.
+1. Run `amplify publish` to auto-build your SPA and upload it to your S3 bucket
