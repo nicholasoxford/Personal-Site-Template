@@ -1,0 +1,22 @@
+{
+  "name": "Nicholas Oxford",
+  "version": "1.0.0",
+  "description": "A personal website for Nicholas Oxford. Check out my github for the template.",
+  "author": "Nicholas Oxford",
+  "private": false,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "acorn": "^6.4.1",
+    "aws-amplify": "^1.2.2",
+    "aws-amplify-vue": "^0.3.2",
+    "element-ui": "^2.13.0",
+    "minimist": "^1.2.3",
+    "nuxt": "^2.0.0",
+    "vue-server-renderer": "^2.6.10"
+  }
+}
