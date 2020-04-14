@@ -38,7 +38,9 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [{ src: "~/plugins/aws-amplify.js", mode: "client" },
- "~/plugins/element-ui.js"],
+ "~/plugins/element-ui.js",  "~/plugins/youtube.js"
+ 
+],
   /*
    ** Nuxt.js dev-modules
    */
@@ -46,7 +48,20 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [[
+    'nuxt-fontawesome', {
+      imports: [
+       {
+         set: '@fortawesome/free-solid-svg-icons',
+         icons: ['fas']
+       },
+       {
+         set:'@fortawesome/free-brands-svg-icons',
+         icons: ['fab']
+       }
+     ]
+    }
+]],
   /*
    ** Build configuration
    */

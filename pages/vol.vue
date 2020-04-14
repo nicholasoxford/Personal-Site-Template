@@ -1,8 +1,8 @@
 <template>
-  <div>
-      <h1 id="sample-markdown">Sample Markdown</h1>
-<h1 id="creating-an-augmented-reality-app-with-4dviews-volumetric-capture">Creating an augmented reality app with 4DViews Volumetric Capture</h1>
-<p><a href="https://www.youtube.com/watch?v=AOq1-qcb6Nk&amp;feature=youtu.be">CLick Here For a Video of the Capture + iOS APP</a></p>
+<div align="center">
+  <div class="textbox">
+  <h1 id="creating-an-augmented-reality-app-with-4dviews-volumetric-capture">Creating an augmented reality app with 4DViews Volumetric Capture</h1>
+<div align="center" style="padding-bottom:10px"><iframe  width="560" height="315" src="https://www.youtube-nocookie.com/embed/AOq1-qcb6Nk?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 <p>For my second volumetric class I wanted to not only get an engaging capture, but also deploy it to an augmented reality (AR) app on my iPhone. After successfully deploying an AR app using a 4DViews Capture + Unity plugin, I was very aware of the lack of tutorials and documentation around each step of the process. To make easier for my classmates to deploy and showcase their awesome work, I decided to make a step-by-step guide. </p>
 <p>While this is a good, general Vuforia tutorial, this is really meant for people utilizing a <a href="https://www.4dviews.com/">4DViews</a> system. I have my full repository uploaded, this guide should be follow step by step. Also, I am using a <strong>Mac</strong> and I&#39;m deploying to <strong>iPhone</strong>. Using windows and android should not only be similar but easier to deploy. </p>
 <p>I am not an iOS developer, so I am encouraging people to submit Pull Request if their code is better. (It probably is)</p>
@@ -68,8 +68,8 @@ Search for &quot;Vuforia&quot; and click install.</p>
 <p>A window will appear with everything you are importing, just click import.</p>
 <h2 id="step-5">Step 5</h2>
 <h3 id="getting-vuforia-working">Getting Vuforia Working</h3>
-<p>Make sure you are viewing &quot;Scene&quot; and not &quot;Game&quot;
-<img src="https://github.com/nicholasoxford/4dviews_vuforia_AR/blob/master/screenshots/Screen%20Shot%202019-12-05%20at%203.52.56%20PM.png?raw=true" alt=""></p>
+<p>Make sure you are viewing &quot;Scene&quot; and not &quot;Game&quot;</p>
+<img src="https://github.com/nicholasoxford/4dviews_vuforia_AR/blob/master/screenshots/Screen%20Shot%202019-12-05%20at%203.52.56%20PM.png?raw=true" alt="">
 <p>First thing you need to do is right click both the main camera and directional light and  delight them. 
 Next right click where the camera and light were, find &quot;Vuforia&quot; and click AR Camera. </p>
 <p><img src="https://github.com/nicholasoxford/4dviews_vuforia_AR/blob/master/screenshots/Screen%20Shot%202019-12-05%20at%203.50.31%20PM.png?raw=true" alt=""></p>
@@ -109,42 +109,43 @@ Next I move it upwards so it&#39;s fully on top of my image. I move it by pressi
 </ul>
 <p>Your 3D asset should pop up. <em>Make sure to scale it up or down to be relevant to your target.</em></p>
 <h2 id="click-play-and-your-app-should-work-">Click play and your app should work.</h2>
-<p>This is some basic, sample markdown.</p>
-<h2 id="second-heading">Second Heading</h2>
-<ul>
-<li>Unordered lists, and:<ol>
-<li>One</li>
-<li>Two</li>
-<li>Three</li>
-</ol>
-</li>
-<li>More</li>
-</ul>
-<blockquote>
-<p>Blockquote</p>
-</blockquote>
-<p>And <strong>bold</strong>, <em>italics</em>, and even <em>italics and later <strong>bold</strong></em>. Even <del>strikethrough</del>. <a href="https://markdowntohtml.com">A link</a> to somewhere.</p>
-<p>And code highlighting:</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = <span class="hljs-string">'bar'</span>;
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">baz</span><span class="hljs-params">(s)</span> </span>{
-   <span class="hljs-keyword">return</span> foo + <span class="hljs-string">':'</span> + s;
-}
-</code></pre>
-<p>Or inline code like <code>var foo = &#39;bar&#39;;</code>.</p>
-<p>Or an image of bears</p>
-<p><img src="http://placebear.com/200/200" alt="bears"></p>
-<p>The end ...</p>
-
+  </div>
   </div>
 </template>
 
 <script>
 export default {
-
+data() {
+    return {
+      videoID: "https://www.youtube.com/watch?v=rZD9dS_6F6k"
+    }
+  },
 }
 </script>
 
-<style>
-
+<style scoped>
+.textbox {
+  text-align: left;
+  width: 80%
+}
+img {
+  max-width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+h1 {
+  padding-bottom: 15px;
+  text-align: center;
+}
+h2 {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+h3 {
+  padding-bottom: 15px;
+}
+p {
+  padding-bottom: 5px;
+}
 </style>

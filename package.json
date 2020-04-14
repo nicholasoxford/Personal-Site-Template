@@ -11,12 +11,18 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
     "acorn": "^6.4.1",
     "aws-amplify": "^1.2.2",
     "aws-amplify-vue": "^0.3.2",
     "element-ui": "^2.13.0",
     "minimist": "^1.2.3",
     "nuxt": "^2.0.0",
-    "vue-server-renderer": "^2.6.10"
+    "nuxt-fontawesome": "^0.4.0",
+    "vue-server-renderer": "^2.6.10",
+    "vue-youtube-embed": "^2.2.2"
   }
 }

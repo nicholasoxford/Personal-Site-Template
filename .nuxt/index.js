@@ -11,8 +11,10 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
+import nuxt_plugin_templatespluginc87a5f98_4a32a170 from 'nuxt_plugin_templatespluginc87a5f98_4a32a170' // Source: ./templates.plugin.c87a5f98.js (mode: 'all')
 import nuxt_plugin_awsamplify_8f02af2e from 'nuxt_plugin_awsamplify_8f02af2e' // Source: ../plugins/aws-amplify.js (mode: 'client')
 import nuxt_plugin_elementui_72a9ed1c from 'nuxt_plugin_elementui_72a9ed1c' // Source: ../plugins/element-ui.js (mode: 'all')
+import nuxt_plugin_youtube_eb95502c from 'nuxt_plugin_youtube_eb95502c' // Source: ../plugins/youtube.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -146,12 +148,20 @@ async function createApp (ssrContext) {
 
   // Plugin execution
 
+  if (typeof nuxt_plugin_templatespluginc87a5f98_4a32a170 === 'function') {
+    await nuxt_plugin_templatespluginc87a5f98_4a32a170(app.context, inject)
+  }
+
   if (process.client && typeof nuxt_plugin_awsamplify_8f02af2e === 'function') {
     await nuxt_plugin_awsamplify_8f02af2e(app.context, inject)
   }
 
   if (typeof nuxt_plugin_elementui_72a9ed1c === 'function') {
     await nuxt_plugin_elementui_72a9ed1c(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_youtube_eb95502c === 'function') {
+    await nuxt_plugin_youtube_eb95502c(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first
