@@ -4,6 +4,8 @@
 [Go here to install NPM.](https://www.npmjs.com/get-npm)
 
 # About Nuxt Amplify Auth Starter
+Thank you Shadow Smith for the foundations of this template. I took his work and tranformed it into a personel site template. 
+
 Nuxt Amplify Auth Starter is a starter template for adding Amplify Auth to a [Nuxt.js](https://nuxtjs.org/) single page web application. All you have to do is connect your Amazon Web Services account to it by using the Amplify CLI, and you will be able to add [Amazon Cognito Authentication](https://aws.amazon.com/cognito/) to your app in minutes.
 
 ## Install and configure the Amplify CLI
@@ -19,7 +21,7 @@ In order to do this, [head on over to the Amplify docs](https://aws-amplify.gith
 6. When prompted *"What javascript framework are you using"*, choose **vue**.
 7. When prompted *"Source Directory Path:"*, choose **.** (just a period) since the default Nuxt.js structure doesn't use a **src** directory.
 8. When prompted *"Distribution Directory Path:"*, choose the default **dist**.
-9. When prompted *"Build Command:"*, choose the default `npm.cmd run-script build`.
+9. When prompted *"Build Command:"*, choose the default.
 10. When prompted *"Start Command:"*, enter `npm.cmd run-script start`.
 11. When prompted *"Do you want to use an AWS profile?"*, choose **Y** and select the profile you want to use.
 
@@ -28,6 +30,10 @@ In order to do this, [head on over to the Amplify docs](https://aws-amplify.gith
 2. When prompted *"Do you want to use the default authentication and security configuration?"*, choose **Default configuration**.
 3. When prompted *"How do you want users to be able to sign in?"*, choose **Username**.
 4. When prompted *"Do you want to configure advanced settings?"*, choose **No, I am done**.
+
+## NPM Install
+1. Run `npm install` to download all the dependecies for this project.
+2. Tip: `npm i` works as well.
 
 ## Add Hosting for your project
 1. Run `amplify add hosting` in your terminal.
@@ -47,4 +53,8 @@ List step takes a few minutes to complete.
 1. Run `npm run dev` in your terminal.
 
 ## Deploy the app to Hosting
-1. Run `amplify publish` to auto-build your SPA and upload it to your S3 bucket
+1. Run `amplify publish` to auto-build your SPA and upload it to your S3 bucket.
+
+## What's Next
+1. I need to add a mobile version
+2. Create Lambda triggers to create S3 buckets for newly created user.
