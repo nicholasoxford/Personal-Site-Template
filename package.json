@@ -19,7 +19,7 @@
     "aws-amplify": "^1.2.2",
     "aws-amplify-vue": "^0.3.2",
     "element-ui": "^2.13.0",
-    "minimist": "^1.2.3",
+    "minimist": "^1.2.6",
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0",
     "vue-server-renderer": "^2.6.10",
