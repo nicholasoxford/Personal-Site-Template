@@ -20,7 +20,7 @@
     "aws-amplify-vue": "^0.3.2",
     "element-ui": "^2.13.0",
     "minimist": "^1.2.3",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "nuxt-fontawesome": "^0.4.0",
     "vue-server-renderer": "^2.6.10",
     "vue-youtube-embed": "^2.2.2"
